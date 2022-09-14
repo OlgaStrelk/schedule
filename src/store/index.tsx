@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import popupReducer from "./popupSlice";
+import todoReducer from "./todoSlice"
 
 const store = configureStore({
   reducer: {
     popup: popupReducer,
+	todos: todoReducer,
   },
 });
 

@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/App.css";
 import { FilterButton } from './FilterButton';
 import { FilterPopup } from './FilterPopup';
+import { TodoList } from './TodoList';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         <FilterButton />
       </section>
       <FilterPopup />
+      <section className="app__tasks">
+        <TodoList />
+      </section>
     </main>
   );
 }
