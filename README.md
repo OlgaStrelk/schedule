@@ -1,4 +1,4 @@
-# TodoList
+# Schedule
 
 **Technology stack:** react, redux toolkit, typescript
 
