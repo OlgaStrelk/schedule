@@ -1,16 +1,16 @@
 import React from "react";
-import "./App.css";
+import "../styles/App.css";
 import { FilterButton } from './FilterButton';
 import { FilterPopup } from './FilterPopup';
 
 function App() {
   return (
-    <>
-      <section>
+    <main className='app'>
+      <section className='app__filter'>
         <FilterButton />
       </section>
       <FilterPopup />
-    </>
+    </main>
   );
 }
 
