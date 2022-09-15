@@ -29,6 +29,8 @@ export const FormPopup: React.FC<IFormPopupProps> = () => {
     e.preventDefault();
     dispatch(addTodo(data));
     dispatch(closeFormPopup())
+    setSubject('');
+    setTask('');
   };
   return (
     <div className={isOpen ? "popup popup_is-opened" : "popup"}>
