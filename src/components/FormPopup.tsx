@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../utils/hooks";
 import { addTodo } from "../store/todoSlice";
+import { closeFormPopup } from '../store/popupSlice';
 
 interface IFormPopupProps {}
 type FormElement = React.FormEvent<HTMLFormElement>;
@@ -24,8 +25,10 @@ export const FormPopup: React.FC<IFormPopupProps> = () => {
   };
 
   const handleSubmit = (e: FormElement): void => {
+    let data = [ subject, task ]
     e.preventDefault();
-    dispatch(addTodo);
+    dispatch(addTodo(data));
+    dispatch(closeFormPopup())
   };
   return (
     <div className={isOpen ? "popup popup_is-opened" : "popup"}>

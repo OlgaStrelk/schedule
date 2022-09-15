@@ -26,7 +26,7 @@ const popupSlice = createSlice({
       state.isFormOpen = true;
     },
 
-    closeFormPopup: (state, action) => {
+    closeFormPopup: (state, action: PayloadAction<undefined>) => {
       state.isFormOpen = false;
     },
   },
