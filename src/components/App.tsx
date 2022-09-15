@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/App.css";
+import { AddTodoButton } from './AddTodoButton';
 import { FilterButton } from './FilterButton';
 import { FilterPopup } from './FilterPopup';
+import { FormPopup } from './FormPopup';
 import { TodoList } from './TodoList';
 
 function App() {
@@ -13,7 +15,10 @@ function App() {
       <FilterPopup />
       <section className="app__tasks">
         <TodoList />
+        <AddTodoButton />
       </section>
+      <FormPopup />
+
     </main>
   );
 }
