@@ -1,19 +1,18 @@
 import * as React from "react";
-import { filterTodos } from "../store/todoSlice";
+import { changeCategory } from '../store/filterSlice';
 import { useAppDispatch } from "../utils/hooks";
 
 interface IFilterItemProps {
   text: string;
-  category: string;
 }
 
-export const FilterItem: React.FC<IFilterItemProps> = ({ text, category }) => {
+export const FilterItem: React.FC<IFilterItemProps> = ({ text }) => {
   const dispatch = useAppDispatch();
   return (
     <button
       type="button"
       onClick={() => {
-        dispatch(filterTodos(category));
+        dispatch(changeCategory(text));
       }}
     >
       {text}

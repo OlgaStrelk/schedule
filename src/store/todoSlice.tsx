@@ -49,31 +49,9 @@ const todoSlice = createSlice({
     deleteTodo(state, action: PayloadAction<number>) {
       state.list = state.list.filter((todo) => todo.id !== action.payload);
     },
-    filterTodos(state, action: PayloadAction<string>) {
-      switch (action.payload) {
-        case "complete":
-          const completeArray = state.list.filter(
-            (todo) => todo.complete === true
-          );
-          state.sortedList = completeArray;
-          console.log(state.sortedList);
-          break;
-        case "uncomplete":
-          const uncompleteArray = state.list.filter(
-            (todo) => todo.complete !== true
-          );
-          state.sortedList = uncompleteArray;
-          console.log(state.sortedList);
-          break;
-        case "all":
-          state.sortedList = state.list;
-          console.log(state.sortedList);
-          break;
-      }
-    },
   },
 });
 
-export const { addTodo, toggleComplete, deleteTodo, filterTodos } = todoSlice.actions;
+export const { addTodo, toggleComplete, deleteTodo } = todoSlice.actions;
 
 export default todoSlice.reducer;
