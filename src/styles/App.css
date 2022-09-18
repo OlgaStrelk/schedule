@@ -1,5 +1,19 @@
 .app {
   margin: 0 auto;
-  padding: 0 17px;
+  padding: 0;
   max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app__filter {
+  display: flex;
+  height: 128px;
+  padding: 0 15.5px;
+  border-bottom: 2px solid #EEF8FD;
+}
+
+.app__tasks {
+  padding: 16px 17px 0;
 }

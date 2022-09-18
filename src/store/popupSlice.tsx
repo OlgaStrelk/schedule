@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 interface IPopup {
   isFilterOpen: boolean;
@@ -14,19 +14,19 @@ const popupSlice = createSlice({
   name: "popup",
   initialState,
   reducers: {
-    openFilterPopup: (state, action: PayloadAction<undefined>) => {
+    openFilterPopup: (state) => {
       state.isFilterOpen = true;
     },
 
-    closeFilterPopup: (state, action) => {
+    closeFilterPopup: (state) => {
       state.isFilterOpen = false;
     },
 
-    openFormPopup: (state, action: PayloadAction<undefined>) => {
+    openFormPopup: (state) => {
       state.isFormOpen = true;
     },
 
-    closeFormPopup: (state, action: PayloadAction<undefined>) => {
+    closeFormPopup: (state) => {
       state.isFormOpen = false;
     },
   },

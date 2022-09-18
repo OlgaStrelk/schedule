@@ -3,6 +3,7 @@ import { useAppSelector } from "../utils/hooks";
 import { TodoItem } from "./TodoItem";
 import "../styles/TodoList.css";
 import { ITodo } from "../store/todoSlice";
+import { ALL_TODOS, COMPLETE_TODOS, UNCOMPLETE_TODOS } from '../utils/consts';
 
 interface ITodoListProps {}
 
@@ -12,13 +13,13 @@ export const TodoList: React.FC<ITodoListProps> = (props) => {
 
   let renderedTodos: ITodo[] = [];
   switch (category) {
-    case "Выполненные":
+    case COMPLETE_TODOS:
       renderedTodos = todos.filter((todo) => todo.complete === true);
       break;
-    case "Не выполненные":
+    case  UNCOMPLETE_TODOS:
       renderedTodos = todos.filter((todo) => todo.complete === false);
       break;
-    case "Показывать все задания":
+    case ALL_TODOS:
       renderedTodos = todos;
       break;
   }

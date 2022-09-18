@@ -18,7 +18,6 @@ function App() {
         <AddTodoButton />
       </section>
       <FormPopup />
-
     </main>
   );
 }

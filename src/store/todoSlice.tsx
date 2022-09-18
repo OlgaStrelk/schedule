@@ -14,13 +14,10 @@ type TodosState = {
 
 const initialState: TodosState = {
   list: [
-    { subject: "RS", task: "дочитать теорию", id: 1, complete: false },
-    { subject: "RS", task: "решить тест 1", id: 2, complete: false },
-    { subject: "RS", task: "решить тест 2", id: 3, complete: false },
-    { subject: "работа", task: "решить тестовое", id: 4, complete: false },
-    { subject: "работа", task: "начать тудулист", id: 5, complete: true },
-    { subject: "забота о себе", task: "позавтракать", id: 6, complete: true },
-    { subject: "забота о себе", task: "выпить кофе", id: 7, complete: true },
+    { subject: "Математика", task: "Стр. 4 , упр. 36 а, б.", id: 1, complete: false },
+    { subject: "Русский язык", task: "Учебник, стр. 4 , упр. 36 а, б.", id: 2, complete: true },
+    { subject: "ИЗО", task: "Подготовить клей, ножницы, вл. салфетки, цветную бумагу, ножницы, шерстняые нитки", id: 3, complete: false },
+    { subject: "Литература", task: "Учебник, стр. 4 , упр. 36 а, б.", id: 4, complete: true },
   ],
 
   sortedList: [],
