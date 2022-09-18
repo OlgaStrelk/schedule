@@ -1,0 +1,21 @@
+.task {
+  margin: auto;
+  max-width: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task__complete-btn {
+  height: 15px;
+}
+
+.task__title {
+}
+
+.task__description {
+}
+
+.task__submit-btn {
+  height: 20px;
+}
