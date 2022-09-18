@@ -3,9 +3,9 @@
 **Technology stack:** react, redux toolkit, typescript
 
 ## To run this project
-* clone it `git clone git@github.com:OlgaStrelk/schedule.git`
+* clone it with `git clone git@github.com:OlgaStrelk/schedule.git`
 * install dependencies with `npm i`
-* `npm start`
+* and finally run with `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
