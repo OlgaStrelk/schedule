@@ -1,7 +1,6 @@
 import * as React from "react";
 import { openFilterPopup } from "../store/popupSlice";
 import { useAppDispatch, useAppSelector } from "../utils/hooks";
-import "../styles/FilterButton.css";
 import { ALL_TODOS, COMPLETE_TODOS, UNCOMPLETE_TODOS } from "../utils/consts";
 
 interface IFilterButtonProps {}
@@ -13,7 +12,7 @@ export const FilterButton: React.FC<IFilterButtonProps> = (props) => {
   return (
     <>
       <button
-        className="btn_type_filter"
+        className="btn btn_type_filter"
         type="button"
         onClick={() => dispatch(openFilterPopup())}
       >

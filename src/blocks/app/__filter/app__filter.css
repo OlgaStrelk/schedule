@@ -1,0 +1,6 @@
+.app__filter {
+  display: flex;
+  height: 128px;
+  padding: 0 15.5px;
+  border-bottom: 2px solid #eef8fd;
+}

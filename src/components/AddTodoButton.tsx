@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useAppDispatch } from "../utils/hooks";
 import { openFormPopup } from "../store/popupSlice";
-import '../styles/AddTodoButton.css'
 
 interface IAddTodoButtonProps {}
 
@@ -10,7 +9,7 @@ export const AddTodoButton: React.FC<IAddTodoButtonProps> = (props) => {
   return (
     <>
       <button
-        className="btn_type_add"
+        className="btn btn_type_add"
         type="button"
         onClick={() => dispatch(openFormPopup())}
       >

@@ -1,5 +1,3 @@
-import React from "react";
-import "../styles/App.css";
 import { AddTodoButton } from './AddTodoButton';
 import { FilterButton } from './FilterButton';
 import { FilterPopup } from './FilterPopup';

@@ -1,0 +1,4 @@
+.task__complete-btn_checked {
+  background: center center no-repeat url("/public/img/check_clicked.svg");
+  border: none;
+}

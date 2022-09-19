@@ -1,6 +1,23 @@
-body {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import "./blocks/app/app.css";
+@import "./blocks/app/__filter/app__filter.css";
+@import "./blocks/app/__tasks/app__tasks.css";
+@import './blocks/btn/btn.css';
+@import "./blocks/btn/_type/btn_type_filter.css";
+@import "./blocks/btn/_type/btn_type_add.css";
+@import "./blocks/popup/popup.css";
+@import "./blocks/popup/_is-opened/popup_is-opened.css";
+@import "./blocks/popup/__container/popup__container.css";
+@import "./blocks/popup/__title/popup__title.css";
+@import "./blocks/popup/__subtitle/popup__subtitle.css";
+@import "./blocks/popup/__form/popup__form.css";
+@import "./blocks/popup/__input/popup__input.css";
+@import "./blocks/popup/__btn/popup__btn.css";
+@import "./blocks/list/list.css";
+@import "./blocks/task/task.css";
+@import "./blocks/task/__complete-btn/task__complete-btn.css";
+@import "./blocks/task/__complete-btn/_checked/task__complete-btn_checked.css";
+@import "./blocks/task/__texts/task__texts.css";
+@import "./blocks/task/__title/task__title.css";
+@import "./blocks/task/__description/task__description.css";
+@import "./blocks/task/__btn-background/task__btn-background.css";
+@import "./blocks/task/__remove-btn/task__remove-btn.css";

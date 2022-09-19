@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useAppDispatch } from "../utils/hooks";
 import { deleteTodo, toggleComplete } from "../store/todoSlice";
-import "../styles/TodoItem.css";
 
 interface ITodoItemProps {
   id: number;
@@ -39,7 +38,7 @@ export const TodoItem: React.FC<ITodoItemProps> = ({
           {task}
         </p>
       </div>
-      <div className='task__background'>
+      <div className='task__btn-background'>
       <button
         className="task__remove-btn"
         type="button"

@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useAppSelector } from "../utils/hooks";
 import { TodoItem } from "./TodoItem";
-import "../styles/TodoList.css";
 import { ITodo } from "../store/todoSlice";
 import { ALL_TODOS, COMPLETE_TODOS, UNCOMPLETE_TODOS } from '../utils/consts';
 

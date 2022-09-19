@@ -1,0 +1,7 @@
+.task__remove-btn {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: center center no-repeat url("/public/img/trash.svg");
+  border: none;
+}
