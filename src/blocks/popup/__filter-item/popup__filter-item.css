@@ -1,0 +1,22 @@
+.popup__filter-item {
+  height: 55.5px;
+
+  color: #737a82;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  line-height: 18px;
+
+  border: none;
+  border-bottom: 0.33px solid #ebebf5;
+
+  cursor: pointer;
+}
+
+.popup__filter-item:first-of-type {
+  border-radius: 14px 14px 0 0;
+}
+
+.popup__filter-item:last-of-type {
+  border-radius: 0 0 14px 14px;
+}

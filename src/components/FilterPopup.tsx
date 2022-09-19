@@ -9,8 +9,8 @@ export const FilterPopup: React.FC<IFilterPopupProps> = (props) => {
   const isOpen = useAppSelector((state) => state.popup.isFilterOpen);
 
   return (
-    <div className={isOpen ? "popup popup_is-opened popup_type_filter" : "popup popup_type_filter"}>
-      <div className="popup__container">
+    <div className={isOpen ? "popup popup_is-opened" : "popup"}>
+      <div className="popup__container popup__container_type_filter">
         <FilterItem text={ALL_TODOS} />
         <FilterItem text={COMPLETE_TODOS} />
         <FilterItem text={UNCOMPLETE_TODOS} />

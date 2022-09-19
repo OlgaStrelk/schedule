@@ -32,9 +32,16 @@ export const FormPopup: React.FC<IFormPopupProps> = () => {
     setSubject("");
     setTask("");
   };
+
+  const handleReset =():void => {
+    dispatch(closeFormPopup());
+    setSubject("");
+    setTask("");
+  }
+
   return (
     <div className={isOpen ? "popup popup_is-opened" : "popup"}>
-      <div className="popup__container">
+      <div className="popup__container popup__container_type_form">
         <h3 className="popup__title">Добавить предмет</h3>
         <p className="popup__subtitle">Укажите заголовок и задание</p>
         <form className="popup__form" onSubmit={handleSubmit}>
@@ -54,7 +61,7 @@ export const FormPopup: React.FC<IFormPopupProps> = () => {
             onChange={changeTask}
             required
           />
-          <button className="popup__btn" type="button">
+          <button className="popup__btn" type="button" onClick={handleReset}>
             Отмена
           </button>
           <button className="popup__btn" type="submit">

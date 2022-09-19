@@ -7,6 +7,10 @@
 @import "./blocks/popup/popup.css";
 @import "./blocks/popup/_is-opened/popup_is-opened.css";
 @import "./blocks/popup/__container/popup__container.css";
+@import "./blocks/popup/__container/_type/popup__container_type_filter.css";
+@import "./blocks/popup/__filter-item/popup__filter-item.css";
+@import "./blocks/popup/__filter-item/_active/popup__filter-item_active.css";
+@import "./blocks/popup/__container/_type/popup__container_type_form.css";
 @import "./blocks/popup/__title/popup__title.css";
 @import "./blocks/popup/__subtitle/popup__subtitle.css";
 @import "./blocks/popup/__form/popup__form.css";

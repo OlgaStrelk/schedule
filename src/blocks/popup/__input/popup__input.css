@@ -9,4 +9,10 @@
 
   border: 0.5px solid #3c3c434d;
   border-radius: 7px;
+
+  caret-color: #0a7aff;
+}
+
+.popup__input:focus-visible {
+  outline: none;
 }
