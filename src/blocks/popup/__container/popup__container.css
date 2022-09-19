@@ -1,8 +1,11 @@
 .popup__container {
   position: absolute;
+
   box-sizing: border-box;
   width: 270px;
+
   color: black;
+
   background-color: rgb(249 249 249 / 94%);
   border-radius: 14px;
 }

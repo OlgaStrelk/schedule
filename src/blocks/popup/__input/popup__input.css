@@ -4,7 +4,9 @@
   height: 32px;
   margin: 0 16px 15px;
   padding: 0 6px;
+
   font-family: Inter, sans-serif;
+
   border: 0.5px solid #3c3c434d;
   border-radius: 7px;
 }

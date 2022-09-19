@@ -1,7 +1,8 @@
 .task__texts {
-	display: flex;
-	flex-direction: column;
-	padding: 10px 0;
-	color: #3b3b3b;
-	font-family: Inter, serif;
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+
+  color: #3b3b3b;
+  font-family: Inter, serif;
+}

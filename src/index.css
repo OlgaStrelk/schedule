@@ -1,7 +1,7 @@
 @import "./blocks/app/app.css";
 @import "./blocks/app/__filter/app__filter.css";
 @import "./blocks/app/__tasks/app__tasks.css";
-@import './blocks/btn/btn.css';
+@import "./blocks/btn/btn.css";
 @import "./blocks/btn/_type/btn_type_filter.css";
 @import "./blocks/btn/_type/btn_type_add.css";
 @import "./blocks/popup/popup.css";
