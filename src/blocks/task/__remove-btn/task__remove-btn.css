@@ -7,4 +7,6 @@
   
   background: center center no-repeat url("/public/img/trash.svg");
   border: none;
+
+  cursor: pointer;
 }

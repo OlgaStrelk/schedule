@@ -9,4 +9,6 @@
   background: center center no-repeat url("/public/img/check.svg");
   border: 2px solid #3b3b3b;
   border-radius: 10px;
+
+  cursor: pointer;
 }
