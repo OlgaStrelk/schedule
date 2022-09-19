@@ -1,17 +1,17 @@
 .app {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 375px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .app__filter {
   display: flex;
   height: 128px;
   padding: 0 15.5px;
-  border-bottom: 2px solid #EEF8FD;
+  border-bottom: 2px solid #eef8fd;
 }
 
 .app__tasks {

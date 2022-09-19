@@ -1,11 +1,11 @@
 .task {
-  min-height: 65.5px;
-  margin: auto;
   display: grid;
   grid-template-columns: 30px auto 40px;
-  grid-gap: 10px 20px;
   align-items: center;
   box-sizing: border-box;
+  min-height: 65.5px;
+  margin-left: 3px;
+  column-gap: 20px;
   border-bottom: 2px solid #eef8fd;
 }
 
@@ -14,30 +14,31 @@
 }
 
 .task__complete-btn {
-  padding: 0;
-  height: 30px;
+  box-sizing: content-box;
   width: 30px;
-  border: 1.5px solid #3b3b3b;
-  border-radius: 10px;
+  height: 30px;
+  padding: 0;
   background: center center no-repeat url("../../public/img/check.svg");
+  border: 2px solid #3b3b3b;
+  border-radius: 10px;
 }
 
 .task__complete-btn_checked {
-  border: none;
   background: center center no-repeat url("../../public/img/check_clicked.svg");
+  border: none;
 }
 
 .task__texts {
-  color: #3b3b3b;
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  padding: 10px 0;
+  color: #3b3b3b;
+  font-family: Inter, serif;
 }
 
 .task__title {
-  font-family: 'Inter', serif;
-  font-weight: 500;
   margin: 0;
+  font-weight: 500;
   font-size: 17px;
   line-height: 25.5px;
 }
@@ -49,9 +50,8 @@
 }
 
 .task__background {
-  justify-self: flex-end;
-  height: 40px;
   width: 40px;
+  height: 40px;
   background-color: #f9f9f9;
   border-radius: 8px;
 }
